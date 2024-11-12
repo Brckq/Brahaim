@@ -1946,6 +1946,10 @@ main .hero-section h2
   {
     width: 100vw;
   }
+  main #lic img
+  {
+    width: 100vw;
+  }
 
 }
 main .normal-section 
@@ -2157,6 +2161,15 @@ main #mapa img
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
+
+main #lic img
+{
+  width: 60vw;
+  height: auto;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
 
 
 main #map .place 
