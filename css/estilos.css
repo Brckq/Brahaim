@@ -306,6 +306,29 @@ header
   margin-right: 4px;
 }
 
+.contador 
+{ 
+  text-align: center; 
+} 
+
+#cuenta-regresiva 
+{ 
+  display: flex; 
+  justify-content: center; 
+  gap: 15px; 
+  font-size: 1.5em; 
+  padding: 5px; 
+}
+#cuenta-regresiva div 
+{ 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+
+
+
 .underline-menu 
 {
   position: fixed;
@@ -624,7 +647,7 @@ header
   }
   #cuenta-regresiva
   {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
   }
 }
 .btn 
@@ -1888,7 +1911,7 @@ main .hero-section h2
 
   main .hero-section h1 
   {
-    font-size: 30px;
+    font-size: 20px;
   }
   main .hero-section h2 
   {
@@ -1916,7 +1939,7 @@ main .hero-section h2
   }
   .titles h1
   {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
   .timeline .timeline__item .content .content
   {
@@ -2136,6 +2159,31 @@ main #mapa img
 }
 
 
+main #map .place 
+{
+  display: flex;
+  align-items: center;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+main #map .place .marker 
+{
+  margin: 0 1em 0.5em 0;
+}
+main #map .place .place-name 
+{
+  font-size: 20px;
+  font-weight: bold;
+}
+main #map
+{
+  width: 60vw;
+  height: auto;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+
 
 main #sponsors .sponsors-list 
 {
@@ -2171,22 +2219,3 @@ main #sponsors .sponsors-list li a img
 }
 
 
-.contador 
-{ 
-  text-align: center; 
-} 
-
-#cuenta-regresiva 
-{ 
-  display: flex; 
-  justify-content: center; 
-  gap: 15px; 
-  font-size: 1.5em; 
-  padding: 5px; 
-}
-#cuenta-regresiva div 
-{ 
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-}
