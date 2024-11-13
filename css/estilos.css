@@ -2314,6 +2314,8 @@ main #antfots .antfots-list li a img
 
 .sow-slider-base
 {
+  pointer-events: none;
+  
   width: 56vw;
   height: 50vw;
 }
