@@ -185,3 +185,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 const fechaFin = new Date('November 15, 2024 15:00:00').getTime(); const cuentaRegresiva = setInterval(() => { const ahora = new Date().getTime(); const distancia = fechaFin - ahora; const dias = Math.floor(distancia / (1000 * 60 * 60 * 24)); const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60)); const segundos = Math.floor((distancia % (1000 * 60)) / 1000); document.getElementById('dias').textContent = dias; document.getElementById('horas').textContent = horas; document.getElementById('minutos').textContent = minutos; document.getElementById('segundos').textContent = segundos; if (distancia < 0) { clearInterval(cuentaRegresiva); document.getElementById('cuenta-regresiva').innerHTML = '¡La cuenta regresiva ha terminado!'; } }, 1000);
+
+
+
+// SLIDER
+
+
