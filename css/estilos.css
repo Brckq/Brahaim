@@ -1942,14 +1942,6 @@ main .hero-section h2
     margin: 1rem 0 0 1.9rem;
     line-height: 1.5;
   }
-  main #mapa img
-  {
-    width: 100vw;
-  }
-  main #lic img
-  {
-    width: 100vw;
-  }
 
 }
 main .normal-section 
@@ -2041,6 +2033,7 @@ main #lic .description
 {
   display: grid;
   gap: 24px;
+  text-align: justify;
   width: 60vw;
 }
 main #lic .description p:nth-child(1) 
@@ -2162,6 +2155,34 @@ main #mapa img
           animation-delay: 0.6s;
 }
 
+
+main #antfots .place 
+{
+  display: flex;
+  align-items: center;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+main #antfots .place .marker 
+{
+  margin: 0 1em 0.5em 0;
+}
+main #antfots .place .place-name 
+{
+  font-size: 20px;
+  font-weight: bold;
+}
+main #antfots img
+{
+  width: 60vw;
+  height: auto;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+
+
+
 main #lic img
 {
   width: 60vw;
@@ -2195,6 +2216,8 @@ main #map
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
+
+
 
 
 
@@ -2232,3 +2255,65 @@ main #sponsors .sponsors-list li a img
 }
 
 
+/*main .normal-section#speakers, main .normal-section#mapa
+{
+  justify-items: normal;
+}
+*/
+
+
+main #antfots .antfots-list 
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  margin: 0 12.5rem;
+  padding: 0;
+  list-style-type: none;
+}
+main #antfots .antfots-list li 
+{
+  text-align: center;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+main #antfots .antfots-list li a 
+{
+  display: block;
+  height: 100%;
+}
+main #antfots .antfots-list li a img 
+{
+  max-width: 150px;
+  pointer-events: none;
+}
+@media screen and (max-width: 750px) 
+{
+  main #antfots .antfots-list 
+  {
+    margin: 0;
+  }
+  main #mapa img
+  {
+    width: 100vw;
+  }
+  main #antfots img
+  {
+    background-size: cover;
+  }
+  main #lic img
+  {
+    width: 100vw;
+  }
+}
+
+
+/*SLIDER*/
+
+
+
+.sow-slider-base
+{
+  width: 56vw;
+  height: 50vw;
+}
