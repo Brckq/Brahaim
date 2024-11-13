@@ -7,8 +7,30 @@
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="icon" type="text/css" href="https://www.tecbasucre.com/img/logomini.png">
   <link rel="stylesheet" type="text/css" href="https://www.tecbasucre.com/css/fonts/fonts.css?v=469739077">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/slider.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/03e9b5ef09.js" crossorigin="anonymous"></script>
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/jquery.min.js' id='jquery-core-js'></script>
+
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/jquery.cycle.min.js' id='sow-slider-slider-cycle2-js'></script>
+
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/jquery.slider.min.js' id='sow-slider-slider-js'></script>
+
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/linuxguist/sowslider@main/jquery.cycle.swipe.min.js' id='sow-slider-slider-cycle2-swipe-js'></script>
+
+  <style type="text/css">
+    
+  .sow-slider-image {
+    width: 100%;
+    height: 600px;
+  }
+
+  .sow-slider-background-image {
+    width: 100%;
+    height: 600px;
+  }
+
+  </style>
 </head>
 <body>
 <!-- pantalla de carga -->
@@ -42,6 +64,7 @@
       <!-- <li><a href="#schedule">Materias</a></li> -->
       <li><a href="#location">Locación</a></li>
       <!-- <li><a href="#sponsors">Contacto</a></li> -->
+      <li><a href="#antfots">Recuerdos</a></li>
     </ul>
   </nav>
 </header>
@@ -63,6 +86,7 @@
     <!-- <li><a href="#schedule">Materias</a></li> -->
     <li><a href="#location">Locación</a></li>
     <!-- <li><a href="#sponsors">Contacto</a></li> -->
+    <li><a href="#antfots">Recuerdos</a></li>
   </ul>
 </nav>
 <main>
@@ -112,7 +136,7 @@
       <li class="timeline__item start">
         <div class="info">
           <div class="dot"></div>
-          <time class="time"><h4 class="title"><a href="#about">Bienvenida y presentación</a></h4>  </time>
+          <time class="time"><h4 class="title"><a href="#about">Bienvenida y presentación</a></h4></time>
         </div>
         <div class="content">
           <h4 class="title"><a href="#int">Introdución</a> </h4>
@@ -164,16 +188,36 @@
 
         </div>
       </li>
+      <li class="timeline__item start">
+        <div class="info">
+          <div class="dot"></div>
+          <time class="time"><h4 class="title"><a href="#antfots">Recuerdos</a></h4></time>
+        </div>
+        <!-- <div class="content">
+          <h4 class="title"><a href="#int">Introdución</a> </h4>
+          <h4 class="title"><a href="#obj">Objetivos y propositos</a></h4>
+          <h4 class="title"><a href="">Palabras de inaguración</a></h4>
+        </div> -->
+      </li>
     </ul>
   </section>
 
 
   <section class="normal-section" id="about">
     <div class="titles">
-      <h1 class="cross-bar-glitch" data-slice="20">Bienvenida y presentación</h1>
+      <h1 class="cross-bar-glitch" data-slice="20">Bienvenida y Presentación</h1>
       <!--
       <h2 class="staggered-rise-in">¿Qué es el profesional superior tecnólogo?</h2>
     -->
+    </div>
+    <div class="description">
+      <p class="fade-up">
+  
+        <b>¡Bienvenidos a la Feria Tecnológica START GREEN de TECBA!  </b>
+  
+        Nos llena de orgullo presentarles una nueva edición de  nuestra feria, donde celebramos 21 años de innovación y  compromiso con la educación y el desarrollo tecnológico en   Sucre. Aquí, podrán explorar proyectos inspiradores creados   por nuestros estudiantes, quienes han puesto su talento al  servicio de la sostenibilidad, creando soluciones que  responden a los retos actuales de nuestra sociedad.
+  
+      </p>
     </div>
     <div class="description">
     <!--      
@@ -182,34 +226,50 @@
       </p>
     -->
       <div class="titles" id="int">
-        <h2 class="staggered-rise-in">Introducción</h2>
+        <h2 class="staggered-rise-in">Historia</h2>
       </div>
       <p class="fade-up">
-       <b> La Feria Tecnológica 2024 del Tecnológico Boliviano Alemán "TECBA"</b> es un evento académico donde se presentarán los mejores proyectos estudiantiles del año, enfocados en la sustentabilidad y el cuidado ambiental. Los proyectos de áreas como sistemas, arquitectura, comunicación y empresarial ofrecen soluciones innovadoras para temas como el reciclaje y la autosostenibilidad, destacando el talento estudiantil y promoviendo la conciencia ambiental y la responsabilidad social.
+       <b>El Tecnológico Boliviano Alemán TECBA</b>, con 21 años de trayectoria en la ciudad de Sucre, ha sido pionero en la creación de ferias tecnológicas, marcando una presencia constante en espacios icónicos como la Plaza Principal 25 de mayo, Plazuela San Francisco, Plazuela Zudañes e instituciones locales. A lo largo de este tiempo, hemos destacado al enviar representaciones de los mejores proyectos Licyt en eventos académicos relevantes a nivel regional y nacional.
+
+       <!--  actualmente combinandolos con el modelo académico Desing Lab, promoviendo la innovación y el talento de nuestros estudiantes. Hoy, en el marco de nuestro programa <b>START GREEN</b>, damos un paso hacia la sustentabilidad, integrando en nuestros proyectos tecnológicos no solo la innovación, sino también el compromiso ambiental y social.
+       <br>
+       En esta edición, el objetivo es desarrollar soluciones innovadoras en las áreas de negocios, sistemas, arquitectura y comunicación, que no solo resuelvan problemáticas actuales, sino que también promuevan prácticas sustentables y responsables con el entorno. A través de la aplicación de tecnologías avanzadas y estrategias empresariales eficientes, buscamos que los proyectos presentados optimicen recursos, mejoren procesos y generen un impacto positivo en nuestra comunidad. Esta actividad, además de formar parte de las celebraciones de nuestro aniversario, refuerza nuestro compromiso con una cultura organizacional enfocada en la eficiencia, la responsabilidad social y la adaptabilidad tecnológica, impulsando un modelo de formación más dinámico y comprometido con el desarrollo sostenible. -->
       </p>
+      <div class="titles" id="int">
+        <h2 class="staggered-rise-in">¿Que hacemos?</h2>
+      </div>
+      <p class="fade-up">
+         Actualmente combinando el SAETA Digital, Licyt y Desing Lab como pilares del Modelo Académico, promovemos la innovación y el talento de nuestros estudiantes. Hoy, en el marco de nuestro programa <b>START GREEN</b>, damos un paso hacia la sustentabilidad, integrando en nuestros proyectos tecnológicos no solo la innovación, sino también el compromiso ambiental y social.
+         <br>
+         En esta edición, el objetivo es desarrollar soluciones innovadoras en las áreas de negocios, sistemas, arquitectura y comunicación, que no solo resuelvan problemáticas actuales, sino que también promuevan prácticas sustentables y responsables con el entorno. A través de la aplicación de tecnologías avanzadas y estrategias empresariales eficientes, buscamos que los proyectos presentados optimicen recursos, mejoren procesos y generen un impacto positivo en nuestra comunidad. Esta actividad, además de formar parte de las celebraciones de nuestro aniversario, refuerza nuestro compromiso con una cultura organizacional enfocada en la eficiencia, la responsabilidad social y la adaptabilidad tecnológica, impulsando un modelo de formación más dinámico y comprometido con el desarrollo sostenible.
+      </p>
+
+      <!-- En esta edición, el objetivo es desarrollar soluciones innovadoras en las áreas de negocios, sistemas, arquitectura y comunicación, que no solo resuelvan problemáticas actuales, sino que también promuevan prácticas sustentables y responsables con el entorno. A través de la aplicación de tecnologías avanzadas y estrategias empresariales eficientes, buscamos que los proyectos presentados optimicen recursos, mejoren procesos y generen un impacto positivo en nuestra comunidad. Esta actividad, además de formar parte de las celebraciones de nuestro aniversario, refuerza nuestro compromiso con una cultura organizacional enfocada en la eficiencia, la responsabilidad social y la adaptabilidad tecnológica, impulsando un modelo de formación más dinámico y comprometido con el desarrollo sostenible. -->
 
 
 
       <div class="titles" id="obj">
-        <h2 class="staggered-rise-in">Objetivos y proposito</h2>
+        <h2 class="staggered-rise-in">Nuestro Objetivo</h2>
       </div>
       <p class="fade-up">
-        La feria busca desarrollar proyectos LICYT en negocios, sistemas, arquitectura y comunicación para resolver problemas actuales con tecnología, eficiencia y prácticas sustentables. Además, promueve una cultura organizacional responsable y celebra el aniversario del TECBA, reforzando su misión académica.
+        <b> La Feria Tecnológica Innovatek ver. START GREEN 2024 del Tecnológico Boliviano Alemán "TECBA"</b> es un evento académico donde se presentarán los mejores proyectos estudiantiles del año, enfocados en la sustentabilidad y el cuidado ambiental. Los proyectos de áreas como sistemas, arquitectura, comunicación y empresarial ofrecen soluciones innovadoras para temas como el reciclaje y la autosostenibilidad, destacando el talento estudiantil y promoviendo la conciencia ambiental y la responsabilidad social reforzando nuestra misión académica.
+       
+        
       </p>
-      <div class="titles titlesflx">
-          <h2 class="staggered-rise-in">Objetivo institucional</h2>
+      <!-- <div class="titles titlesflx">
+          <h2 class="staggered-rise-in">Objetivo Institucional</h2>
           <img class="staggered-rise-in" src="https://cdn-icons-png.freepik.com/512/7870/7870721.png">
       </div>
       <p class="fade-up">
           La feria resalta la formación académica del TECBA mediante la metodología SAETA y el modelo LICYT, exhibiendo proyectos destacados en diversas áreas y promoviendo la autosostenibilidad y el cuidado ambiental, con el LICYT como base para formar tecnólogos innovadores.
       </p>
       <div class="titles titlesflx">
-          <h2 class="staggered-rise-in">Objetivo académico</h2>
+          <h2 class="staggered-rise-in">Objetivo Académico</h2>
           <img class="staggered-rise-in" src="https://png.pngtree.com/png-clipart/20230417/original/pngtree-academic-line-icon-png-image_9063901.png">
       </div>
       <p class="fade-up">
           La feria fomenta un entorno competitivo donde estudiantes y docentes muestran los resultados aplicados de cada asignatura, mediante proyectos útiles y concretos que reflejan el uso de herramientas de diseño tecnológico y la autosostenibilidad, evidenciando el potencial de las carreras del TECBA.
-      </p>
+      </p> -->
 
         </div>
       </div>
@@ -1379,7 +1439,7 @@
               <p>(por definir)</p>
           </div>
       </div>
- -->
+      -->
 
 
     </div>
@@ -1729,346 +1789,7 @@
 
     
   </section>
- <!--  <section class="normal-section licyt" id="work">
-    <div class="titles">
-      <h1 class="cross-bar-glitch" data-slice="20">¿Dónde puedo trabajar?</h1>
-    </div>
-    <div class="description">
-      <p class="fade-up">
-        <label>O</label> 
-        Diseñador, diagramador en el área de diseño editorial.
-        <br>
-        <label>O</label> 
-        Director de arte o creativo en empresas públicas o privadas, para realizar proyectos para audiovisuales, multimedia e internet.
-        <br>
-        <label>O</label> 
-        Emprendedor y Gerente de su propia empresa de Servicios en Diseño Gráfico.
-        <br>
-        <label>O</label>
-        Director de su propia empresa de Diseño Gráfico, de imagen institucional.
-      </p>
-    </div>
-    <div class="titles">
-      <h1 class="cross-bar-glitch" data-slice="20">¿Qué es un Tecnólogo FH?</h1>
-    </div>
-    <div class="description">
-      <p class="fade-up">
-        Es un profesional Superior formado en el modelo educativo de las Universidades Tecnológicas Alemanas FH que tiene competencias y skills del “Knowledge Worker” para trabajar en el nuevo mercado de la IV Revolución Industrial del siglo XXI.
-      </p>
-    </div>
-    <div class="titles">
-      <h1 class="cross-bar-glitch" data-slice="20">Ventajas del TECBA</h1>
-    </div>
-    <div class="description">
-      <p class="fade-up">
-        El Tecnológico Boliviano Alemán como ACADEMIA CISCO y SOPORTE GOOGLE en Bolivia, especializa a los estudiantes y profesionales, mediante el PROGRAMA TECBA FÜR ARBEIT en el estudio y aplicación de Sistemas Informáticos necesarios para trabajar en la economía digital.<br><br>
-        <a class="btn btn-ghost btn-through" href="http://www.tecbasucre.com/cursoscisco.php" target="_blank">Ver cursos CISCO</a>
-      </p>
-    </div>
-  </section>
-  <section class="normal-section" id="speakers">
-    <div class="titles">
-      <h1 class="cross-bar-glitch" data-slice="20">Docentes</h1>
-      <h2 class="staggered-rise-in">Tecnólogos</h2>
-    </div>
-    <div class="speakers-cards">
-      <div class="card">
-        <div class="card-borders blur">
-          <div class="border-top"></div>
-          <div class="border-right"></div>
-          <div class="border-bottom"></div>
-          <div class="border-left"></div>
-        </div>
-        <div class="card-content blur">
-          <img src="https://www.tecbasucre.com/img/docentes/JP.png" class="avatar"/>
-          <div class="username">Juan Pablo</div>
-          <div class="info">Arquitecto titulado en la Universidad<br  />San Francisco Xavier de Chuquisaca</div>
-        </div>
-        <div class="details">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-borders blur">
-          <div class="border-top"></div>
-          <div class="border-right"></div>
-          <div class="border-bottom"></div>
-          <div class="border-left"></div>
-        </div>
-        <div class="card-content blur">
-          <img src="https://www.tecbasucre.com/img/docentes/JP.png" class="avatar"/>
-          <div class="username">Juan Pablo</div>
-          <div class="info">Arquitecto titulado en la Universidad<br  />San Francisco Xavier de Chuquisaca</div>
-        </div>
-        <div class="details">
-          <p>
-          Tengo una maestría en Proyectos de Arquitectura y Urbanismo otorgada por la Universidad Europea del Atlántico y un diplomado en Investigación y Formación Tutoral otorgado por el CEPI.
-          Tengo 8 años de ejercicio profesional, desarrollé mi actividad profesional en el ámbito del ejercicio independiente.
-          </p>
-
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-borders blur">
-          <div class="border-top"></div>
-          <div class="border-right"></div>
-          <div class="border-bottom"></div>
-          <div class="border-left"></div>
-        </div>
-        <div class="card-content blur">
-          <img src="https://www.tecbasucre.com/img/docentes/JP.png" class="avatar"/>
-          <div class="username">Juan Pablo</div>
-          <div class="info">Arquitecto titulado en la Universidad<br  />San Francisco Xavier de Chuquisaca</div>
-        </div>
-        <div class="details">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-borders blur">
-          <div class="border-top"></div>
-          <div class="border-right"></div>
-          <div class="border-bottom"></div>
-          <div class="border-left"></div>
-        </div>
-        <div class="card-content blur">
-          <img src="https://www.tecbasucre.com/img/docentes/JP.png" class="avatar"/>
-          <div class="username">Juan Pablo</div>
-          <div class="info">Arquitecto titulado en la Universidad<br  />San Francisco Xavier de Chuquisaca</div>
-        </div>
-        <div class="details">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-borders blur">
-          <div class="border-top"></div>
-          <div class="border-right"></div>
-          <div class="border-bottom"></div>
-          <div class="border-left"></div>
-        </div>
-        <div class="card-content blur">
-          <img src="https://www.tecbasucre.com/img/docentes/JP.png" class="avatar"/>
-          <div class="username">Juan Pablo</div>
-          <div class="info">Arquitecto titulado en la Universidad<br  />San Francisco Xavier de Chuquisaca</div>
-        </div>
-        <div class="details">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-borders blur">
-          <div class="border-top"></div>
-          <div class="border-right"></div>
-          <div class="border-bottom"></div>
-          <div class="border-left"></div>
-        </div>
-        <div class="card-content blur">
-          <img src="https://www.tecbasucre.com/img/docentes/JP.png" class="avatar"/>
-          <div class="username">Juan Pablo</div>
-          <div class="info">Arquitecto titulado en la Universidad<br  />San Francisco Xavier de Chuquisaca</div>
-        </div>
-        <div class="details">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-borders blur">
-          <div class="border-top"></div>
-          <div class="border-right"></div>
-          <div class="border-bottom"></div>
-          <div class="border-left"></div>
-        </div>
-        <div class="card-content blur">
-          <img src="https://www.tecbasucre.com/img/docentes/JP.png" class="avatar"/>
-          <div class="username">Juan Pablo</div>
-          <div class="info">Arquitecto titulado en la Universidad<br  />San Francisco Xavier de Chuquisaca</div>
-        </div>
-        <div class="details">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-borders blur">
-          <div class="border-top"></div>
-          <div class="border-right"></div>
-          <div class="border-bottom"></div>
-          <div class="border-left"></div>
-        </div>
-        <div class="card-content blur">
-          <img src="https://www.tecbasucre.com/img/docentes/JP.png" class="avatar"/>
-          <div class="username">Juan Pablo</div>
-          <div class="info">Arquitecto titulado en la Universidad<br  />San Francisco Xavier de Chuquisaca</div>
-        </div>
-        <div class="details">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-borders blur">
-          <div class="border-top"></div>
-          <div class="border-right"></div>
-          <div class="border-bottom"></div>
-          <div class="border-left"></div>
-        </div>
-        <div class="card-content blur">
-          <img src="https://www.tecbasucre.com/img/docentes/JP.png" class="avatar"/>
-          <div class="username">Juan Pablo</div>
-          <div class="info">Arquitecto titulado en la Universidad<br  />San Francisco Xavier de Chuquisaca</div>
-        </div>
-        <div class="details">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident.</p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- <section class="normal-section" id="schedule">
-    <div class="titles">
-      <h1 class="cross-bar-glitch" data-slice="20">Materias</h1>
-      <h2 class="staggered-rise-in">Anual</h2>
-    </div>
-    <ul class="timeline">
-      <li class="timeline__line"></li>
-      <li class="timeline__item start">
-        <div class="info">
-          <div class="dot"></div>
-          <time class="time">Inicio de clases primer año</time>
-          <h4 class="title">Taller de introducción</h4>
-        </div>
-        <div class="content">
-          ​Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-        </div>
-      </li>
-      <li class="timeline__item">
-        <div class="info">
-          <div class="dot"></div>
-          <time class="time">Primer Año</time>
-          <h4 class="speaker">Proyectos SITEP</h4>
-          <h4 class="title">
-            <a target="_blank" href="">Materias</a>
-          </h4>
-        </div>
-        <div class="content">
-          ​Fundamentos de diseño<br>
-          Comunicación visual<br>
-          Diseño vectorial<br>
-          Creación de imágenes digitales<br>
-          Tipografía<br>
-          Taller de creatividad<br>
-          Inglés técnico<br>
-        </div>
-      </li>
-      <li class="timeline__item break">
-        <div class="info">
-          <div class="dot"></div>
-          <time class="time">Inicio de clases segundo año</time>
-          <h4 class="title">Taller de introducción</h4>
-        </div>
-        <div class="content">
-          ​Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-        </div>
-      </li>
-      <li class="timeline__item">
-        <div class="info">
-          <div class="dot"></div>
-          <time class="time">Segundo Año</time>
-          <h4 class="speaker">Proyectos SITEP y LICYT</h4>
-          <h4 class="title">
-            <a target="_blank" href="">Materias</a>
-          </h4>
-        </div>
-        <div class="content">
-          ​Maquetación electrónica<br>
-          Interfaz gráfica<br>
-          Audiovisual<br>
-          Emprendimiento productivo<br>
-          Marketing<br>
-          Diseño y modelado 3D<br>
-          Diseño eimagen de marca<br>
-        </div>
-      </li>
-      <li class="timeline__item break">
-        <div class="info">
-          <div class="dot"></div>
-          <time class="time">Inicio de clases tercer año</time>
-          <h4 class="title">Taller de introducción</h4>
-        </div>
-        <div class="content">
-          ​Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-        </div>
-      </li>
-      <li class="timeline__item">
-        <div class="info">
-          <div class="dot"></div>
-          <time class="time">Tercer Año </time>
-          <h4 class="speaker">Proyectos LICYT</h4>
-          <h4 class="title">
-            <a target="_blank" href="">Materias</a>
-          </h4>
-        </div>
-        <div class="content">
-          ​Diseño para el desarrollo<br>
-          Sistemas de impresión<br>
-          Proyectos de diseño<br>
-          Diagnóstico de diseño<br>
-          Pensamiento creativo y prototipado<br>
-          Producción prototipos<br>
-          Aplicación y diseño<br>
-          Taller de modalidades de graduación<br>
-        </div>
-      </li>
-      <li class="timeline__item">
-        <div class="info">
-          <div class="dot"></div>
-          <time class="time">Defensa de grado</time>
-          <h4 class="speaker">Proyecto de grado</h4>
-          <h4 class="title">
-            <a target="_blank" href="#lic">Proyectos</a>
-          </h4>
-        </div>
-      </li>
-    </ul>
-  </section> -->
+ 
   <section class="normal-section" id="location">
     <div class="titles">
       <h1 class="cross-bar-glitch" data-slice="20">Locación</h1>
@@ -2087,28 +1808,87 @@
     <!-- <div id="map" class="fade-in"></div> -->
     <button class="arriba"></button>
   </section>
-  <!-- <section class="normal-section" id="sponsors">
-    <div class="titles">
-      <h1 class="cross-bar-glitch" data-slice="20">Contactos</h1>
-      <h2 class="staggered-rise-in">Puedes contactar consotros</h2>
-    </div>
-    <ul class="sponsors-list">
+  <section class="normal-section" id="antfots">
+      <div class="titles">
+        <h1 class="cross-bar-glitch tapitas" data-slice="20">Recuerdos</h1>
+        <h2 class="staggered-rise-in">Una vista al pasado</h2>
+      </div>
 
-      <li class="fade-up">
-        <a href="https://www.tecbasucre.com/index.php" target="_blank">
-          <img src="https://www.tecbasucre.com/img/logowhite.png" alt="TECBA" />
-        </a>
-        <div>TECBA</div>
-      </li>
+      
 
-      <li class="fade-up">
-        <a href="https://talkenglish.tecbasucreacad.com/" target="_blank">
-          <img src="https://talkenglish.tecbasucreacad.com/wp-content/uploads/2024/10/Talk-english-logo-1.png" />
-        </a>
-        <div>TALK°ENGLISH</div>
-      </li>
-    </ul>
-  </section> -->
+      <div class="sow-slider-base" style="display: none">
+        <ul class="sow-slider-images" data-settings="{&quot;pagination&quot;:true,&quot;speed&quot;:1000,&quot;timeout&quot;:2000,&quot;paused&quot;:false,&quot;pause_on_hover&quot;:false,&quot;swipe&quot;:true,&quot;nav_always_show_desktop&quot;:&quot;&quot;,&quot;nav_always_show_mobile&quot;:true,&quot;breakpoint&quot;:&quot;780px&quot;,&quot;unmute&quot;:false,&quot;anchor&quot;:null}" data-anchor-id="">
+
+
+          <li class="sow-slider-image  sow-slider-image-cover" style="visibility: visible;;cursor: pointer;" data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}" >
+            <img width="1253" height="589" src="https://lh3.googleusercontent.com/fife/ALs6j_HTqoAM87nYgAC5UwFs68YelTUwwB3rkQqSvOyQuqGOy_A0zGmGNAXyDyCKnKk2O-Hc7oPVGkWbai_xdK-ntWkLWpovaegkGLP950yViQB4Y8RcT2UxR5ikRuj68ttNpHxvfIJo3Iq4RTdenqh8Gf4YYzxHe0TxcuEvnhha8F1cqIWKAZZ_g5s0yWRns4eE31pow4ora-Ap7L-VBTcDfOra2vQRPWdhb82S53wScx1fGogoUDhqMhcD0BGRpXboZGvFdobormXo_YhjE0sezCLAx7sJW0EbbbBidhX3G3qU07JKaUic-jZT9Q4_OyKi0nlSrc6ti6bwybGT7sphkJle4Q-Vc87nt6PjMpJ-GWdMdL6B-fpPrCITODOfxy7GXlcEfkXMENwODCp__xgJty-19LGYTHQC0tH-zadC4QUQFw88az1FKL9TxxIFayadvgm25haOgleLF3XXUcpYqok5dXE7_NJm2MHRJOvArjTtTXPYNlLSkve4Wxyg_ZabiT9n_sRagN_zgULyo30x33Cm5o6fr5yTSsRoOEOKK76kF92xObcItVN9w9736Tpi_LPIcleg84JGizYokG_5DCiNJXdVqrDTJtBGSwyQ4QzHJmW17UnKSOWnK6IY4z7OG456ZATY8WW3Q63VjGqRbIxQrvEquNcJSOMQbp8gIE3NIxIVO5jbp5pPrzfXoj2buOHVqMRGWUD6YmMva9W3eb_N1BJVks7ZkPbBzBdg9JnPM9d3F4jl4erxOJ-M1PoclOP9DBt-2jimtMvTQkesN_LmfbPpNF-ZmWtPXllmLrPGaKzc9tG-zB11VVOl09_xLH5svaAejsCWyzB0oCmCFVQwuOy9QEihIC99uPOPbxlb7MuTdeHupMwbQYMIztfUygUbbVjoW8NYLFke5oV26RaA7X8_EJ6C8l7XTXRu58w8sO7m8bB7Cc9Y0q2g41OZ7qJtW_-I1GiAGeeln5wwn75fa8QE9ylk64R8-bnEJZPH1tsv-iC-aBoeRkjxmu0kxMPiczOSIMUZQo6GU7iiybs4d1mOQPvYLsWnJiWIo7gWZHKP7RpRpU-TNavwfkDTQqG-WYNjY45gyZfw4grVNf4ISG9gzrfFqgUTq-kYYlfWUEYmArp-JxKfVYGxOnt7ffn8ijJvkQH7uheBHFhHgM8-dnofO298RX2jLPC5ASd1mDzPUhPZwfDttLHZoyO9ui5W8QvXVtNZhE23I44cuwqAESKZ2RZzAZQLMRHlZCL0d2yUhCYYzGl69AJ9lNEiOB25cIEEuLGP86YN6iPdtgpOqnkv4zjeZslcUoqQBKhTZH1dViwOhYbROD63Q2OOKG91L_KdfCyJ2D_aHXAguz0kuwS9-oeDCExszxzFgSH2yX3V0nd4xDE12-dZvJxmKILGJ1DeT6ex4-8WDt8uxuyNeb8OrwiH-7bJ--1XxQ2_UVqKqDzogVd_ZU6RqfZSeFE1uoP3jtrVQoRJl0HsCg42qV44yKvKJ9fCZVAWb2CewTl6g6Bg-_xBWP0uhYIHOy3hXW0VXmtjJUdqgmnd1Qu_-Pcl0637rSIsnEKJfge7GujgUH-ONsvfIsQZmJbVpT1GOsvU5aArmLs3MuBpuyqvX9TgXnGORUsn8TtaXWYmSatM4G3UhLerdKIfc2mCHBxhfELqwb9Id5WkJzGBLLErpXtu-Q=w1303-h652" />
+          </li>
+
+
+
+       
+
+
+          <li class="sow-slider-image  sow-slider-image-cover" style="visibility: visible;;cursor: pointer;" data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}" >
+            <img width="1253" height="589" src="https://lh3.googleusercontent.com/fife/ALs6j_Hp3HWDvleg_u_oh6TqE4WuYjaZWgFMJcFnVFeDPLxzc3Ai2hAUTtOAyVaN5XvOysJ19YNgKE-bwVkLdivSar_Qi45UN5KTVWfjSZLCt7poEubF0DqMs4PTUqFPWU_e0po9-vE5RfOmXX0fv1slDeu4mnKf1e7NHTrrNTfOtG0OxBzR2YbAJlsthV49J34YWZsAhCZv0COJYwssArXY4v4xqIqx4wg-6K-POOQ4bcnFG8-6hOpH0CN37gFXMjtL2-JVgcMWHOeNCZ1hV3-ZIo_AV1Z4tU9C_4MnBfwRxSYz7P7L81ex05Ct9ycClD4Ls-a6XcRNzTsFoHM0jUe330kohIN1s1yelQLA-o4_8F48JCelTKwAAvxy2i4WjDhoW_OqAioTuzRCs1m6kiage1ybgP4yIRh2ZaZaw4BhjSqt2x4g1n0TRddduA-XoAHXnhufM7AITvCdVHXQ6Qs-sW22A549JhRGnXP-xfJC74iXJgMPzeroi7e5hzKqdV23MXk3iFxKnmEBGXZCoHTA5BZPDnvL168cIYgqtpstPdwYuvDKZknzdUOdSpKXsYH0MJlNKfP3VDZDdrQ4esqNVy3NwM1bo0WtQu8fDxGfPsw3dbIg35ImV920XS7CFr5SFBuz2aVfuwPWzziHVD6pBOJrxV8JZRSN7SeZUApWyz3xMe5pBOXPJERL0pVby9spQuuRMCoMgoYSNrOEInR1m1foLZXLaCw8CEhZ9OKY-V0vZJPjxUZyf8te5F7mxQ1tNHIrSIhk1RoFM2REjTFAfmI6MRO5ypmWueblsreLqHXwKR-qyBvBPK3rwtazDVMen7VG96DdOyq-yVFbyMz5okYQn9oCFUErrd6YTVZRpjJOoo6On2hMhT3Ac4bRGyvQWstrWZ3mTm0tzRGC8ZUGBWYTBj3Sz_J7mM5vwV02AwkKkjpYNumMWx3QKAiL1BQL9TN3hNN3krziqscmhVMaEJS_1dWClkDjrAYpb6iay-2XB-89tY6eLX3pqh-ilmqp4cLHJ-woBzJcSdcVEaMYDhbmq5JfWhztKR_dRuUCt0b6CFeU6yK1CFhtLsr9m1vyZtYOtmiVZtjjbfsTuZXbPn5DTDpBggo0l9_FbVPQOTqAvbUhd0463VFxoVs11uc4m7Hr5RRSdOS_C8yRBk7Mrxo7CxxeKc7INylAL5pd8t7PFR4KPaGp1YXR3WMqr7w5vdBDQsxUO4Ylx8PMxPedf-2IpftsE2wC-mxEQ9h29LaQIozn4sMn74GtPtTrATJqFtLjfZTCpf1UTcycwu3Zc6DBtyBQ98JhjAAEKC_JFlcxKt94aPKELwx9XZYxpZORBPvGmP-hl7SX6ZsUrNKApmhlUgAvOsM2WnkqmkyRjE9RWYTHYSLT9LBXgjV381fUgLjNVVvGPx3ELDqk1kN_Rf7JYvH6woDulg-wpKAjNTb6Ag1wHXQxtZvYxXhdKVWaclIdeFzqehOKWSqEp_amt89V_U6GWC_PZYQHWM50ZCeHZKK5BqWUTT72wgWf7cP7GUoCey9VLQ1oM-RHPQYIpvPf2W-jjVlgD1fEGC8j_I4hhZdxn4_cEQUDr3T012IEK3tdGApohRIEHeTR0jhckqvd8_nyZEoe7DyMZ7VsHMG4NWldSygXlOvph6-w5BHK_LiUTdjNtyM9ZU63h35CmdEtZdjf=w1303-h652" />
+          </li>
+
+
+          <li class="sow-slider-image  sow-slider-image-cover" style="visibility: visible;;cursor: pointer;" data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}" >
+            <img width="1253" height="589" src="https://lh3.googleusercontent.com/fife/ALs6j_GZq1oY4qXb9iIeTHX5NXzfmetqvH0qCqnmhJgc3JiMtQCZ3G3Zvc6BMd1GhHIdfryDgVHsSABFTD6vGd3pwIvph6Z6kqLoSTwKhiJ6pfanw6SQxj19NDUtZtbyO9m4lrNW92dvHgMLdx66Y9aRbwwsPShEl9zHQbTnk7CwqAexEXD9lmAz0ZpUjsEEWn3M3ydClC2y1tzSatHl8TouccWyicpEvLL7HPaPIozSi41RTRAf1h1Z2K5zsG7V1EzszU4LSrmT02Trwje_uenuRp8HK6-ffg3e-TwcvLdwSZOWG7fheP-ucu5xY7qk5FrBOnsA0wo5MgEy5EZoGIY0xhF4hU_G1ei66Zf8MTtF3mlU9Jz8JGhIVCDkHrbSDG5fPvFxfPvPI5NMee81En7AzLEj-PCb1zYfQXHCMhie3BTQI3j_8x3a50LraGSD2IB8uzXEk30D1UcvP6kHtoUHURN5ncbqhPJmXmk-9jpwosDvS20umCVVEeICRz3ZyElOfNvK8qNpZA_Xm2RngTkljyooreutLtqW9nbnrp63aGNkbM0GOnEtgtf-8jG86pafxGFYuzqBl8U0oyTSdmvEh_BwqIZx5-TSJ2XTnb-MtFKvXfMYJEiTjMLvc_-8u7OExE1kEeYeXqTc5WGr6sKq_HA1MGAYMb1wW6-zV3N8gG3332gdDz398ot1g03yZV3lC5IwMz7xl-0hj7OYgFjMlCCDFmq6xqPuuAWGnwmcxB5oVRvs1LxbVuO4VAX1CHPWvGTpL0OezbGTgqC2mNiKvoChJQ7h4DFpLE-G2Lm2F15DIm8123xltsHZ2irhhMCwa9tCrCw8XsRO6TOWXt4w3pFF5yJalGbnWlW7_NkDGRpRy2f9GKx6mDD7H-wlU2EZyxbUhQvxJxzgFXzbZKrG5YmtlrzcR1faFhCPEhCS2SG_qMbKAO2hx7TMeLBYvGmRq6nxe_gYXOa1bIeqZHVPqlKxyO98nMpNCggWrIb_bb9GkBWEF642KDsKAbXFibOVxXodYEEJA12ndItUiWVVMI5WtgKGF3bB4gbctln8cWRT_Lg7N5VH9sQ-CT4k4U-TABfwNdn_Iy3YKZAVOInaK7_SJT0uogiDgXYPHbfyNeyL2IsJVeJzwF5waZvCbSItWyjnRFNZ1xvFFhaPslA0hMm97Z1gtpJiVfLQUc9j8TTusZKNp-vOv_lehzWlaCZpAYfPxZET5S55uS5iUunDMr1XsWm4pmfmw-0HNbGLPuERuT4IFftG1iJ8d2RtNa4PA5PYbl0XFdY2dMser8aU4Y6sgQrGJLcI9EDJmU9cPY60Z7N9YZuAKMgC3h7Rhhz54492kknjtJBZ4fIH63eAKLRExLkup39ebenA4YjckP1tPd_stf4aZROpf7FydUIWtseUigkSpt5l8IRjxd6DkLEXdE-_iar1CRO8bQxCt6Vrctp0Cula8_bMkwNSbG-IzjKxjI3Ti0TBHVcdmZIyKXJufoQ0AHYX4bmGdjwW3aykk5IlvyczvvVZYF_FGOuzLNAvfvmgy4YzegKJpaBTrmXSMARo_s2oShHb2QSWV0OgEouZAQH4A6ML1dXgMJjjDtoh24tUWroJ0n5ifZL2ZE4kANnH0dJhSgFUaDPsCz8YZKxKhb7aSqXQjcfUT8lprznbN8cZwsL8QZUKPdx6_hPW1HacWA=w1303-h652" />
+          </li>
+
+
+          <li class="sow-slider-image  sow-slider-image-cover" style="visibility: visible;;cursor: pointer;" data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}" >
+            <img width="1253" height="589" src="https://lh3.googleusercontent.com/fife/ALs6j_Emenh_i-bK1on8mIaGYiO3T_bdjdzTK27xXvjnnEPFYieV5Khp40CDMvmlBuxsokG9YWiaBr2Q39fC3g67RGFumv1BCFCCKx9eGFkoUvpkk4FdMNErDJjNMs8N2-_z1EMyfBKiHCEZ87oFyBO2alluVgREhCjwA-xqUr146YunHlK60_pF-eD_fP8KriQ6QHF-s8jeVFR-6j4vFnKstiJC4GNpa3ocesif4cyD2HW0tZkoo0PATjm8fbkcyeM7fwg4X9t-iF6KHO3Q6m1LSXwKQLLI5CTEGinlBBdCAF4bk7QsIsW-9AugclV68rqJtuawlQyMMjZLWz-5Jtc0TicnztQCT6xCl_z7V3zdSYzqtwyEc_f6n6FL4rklp4HRu6Noxek3b7JCnr05OezsyZUIT4In09QixWdAHW9BCrEdKauV_bNPz1W43jCXdINj2VPl12Sh5qa1Tqo1lI1_u5gsBC6h5ER77lv4xs7d12by5GKX1x36NcSGfo8mxJGRRIIZW1SXggIFbrsWT0QB650cJNCdnr8llQgJwcmpeiATWWUS2pTdITwhZjBLNeKS083u_eQviNi7qO76Zdar7w9kSZY2Et41y8L4FWSjmyfhlBq0eZ-0PFc-adBTTaDVrQPI5_T7LtVrE1pTl5V6ffBLJRLK8Mi9fg48QY1CmtZYRKMdHeuPiaaGPNEVPlDIiQSgC1DxccDCWBGOSgNRVHbkHUk9bGF2WyPj44jiaEw_y0ZCQAfg0sBe6H8LeB4ejmKqY11XvCLmVkkw_gT1akW-IbWU4Gi1rIplBcrawFMjE7_LXaHi6zrIWsETEaQoGNSilzxFrvwRpCpErJUAKa0zX1648K8z7iq5YBenjrxn9UcIfvxXpGFggTiwrMCwvPpl_QoDD3OIEDoA1XPTKi2Zszh8j2CAwNKReRZZSWVbD1K42Fmzm8NbZCaQ9VhD3qFMsCKMniO4BaeNlaH9-bCpnLNvdk0oUUS39bk5-oGjh005woviFMTAv4Vq0IZSgudOHX_Vtt7HO1DTQXCPZ7RQq61L42PPkA1PxM2li86QE3ihSHaOPjdtt6fSfzdKC1AaMcmGRK5ISaDWATj9zWrSWLO0MWwbMOpIlbLw-JH1IbwLn9m8vkSkIePQ9J9F71uwdDSPeVmmVjTH6KBe6HGVOG6TCtkE3XNMPzao2UUWMbKYvTIGpKGdf1C2j9O5kxfdaEzPCgxYi477NbrKr2jWs3xN61RLCYcBO7TLZH1a2mLVzu8WH3K3dlvCSzMrgm6uCvbCbAxp1dF0o5sBg3P41AKSHHxaHTG3HRw-nlIvHLIx02IDQzZTI-IC86gTb8cIt_oUfGOr2nkuYrb6-4Q0fznBirwL1aDpyIXccFLpEGo2KHeUMmjz0FkfyBlxK0qoVZ48exqyQE2MHMDSwc_cPG2_YYxAsWePZCXWY7PufgcGTchMyHYORGSbyVZgqIx_NqK6hOt6xabhr2eVKlG06TaXK5I8OXzLeWtUbBe3JRO0t3n8SdXpBaUXal3e_E9cVsmDh1xvVFWYtfGUvCz_TSQjhA4S2GE3YI2E7XNDBDnc2NGx62v60VyXswm6UJPHTUvDBXKp5CD5aclFx4yZ2yROL-0Ecb9E-vcx352HdJbMblv78jImnI5Z3V7ngLNYK1jcWQJD-GY3DtVeOelKxuFCMw=w1303-h652" />
+          </li>
+
+
+
+          <li class="sow-slider-image  sow-slider-image-cover" style="visibility: visible;;cursor: pointer;" data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}" >
+            <img width="1253" height="589" src="https://lh3.googleusercontent.com/fife/ALs6j_GER_VtNBC9guHFrSeaHAUx1VUBjmcTMdqlb1hyVLYCZr6r3yVLX-s7sLDxQWmGPZGFPWN_xNz7bt6oF0fksk5yshzlNSIYiZMvF3QR6fm78DIiq5YXfEjdNBdWpH82ZPx41Ok6k0ebyHRQCjUkCI88CwT3JN8TRpFJY236aLNgWUa33zkeHtFu7Gp4Wh6XBjMwJ4UrYAftPo7f5arg3ttN6OmVimlwgE_paiZODl1wb4lXpwP8g6ioTdnKqFvpH4GCXt-AOMuO-BpS2LfsYKu6zSi8uIT8xFAeLzWoVMkFPx6W6WSrWM2n_3DlsiW-KH1PO9iBWz6aiDtBXb5MspVWtOy8eTFqUTS7Twu4LO4vhwFycFFdk_NMpjMS8iOlsetgsMVDCey8dJawKNvC_09EEA9nmgD7otwz6CZp8IMi9BnPo06EkNYHGkvAJwvOYV6lumyaoO1zyt7SdwGqRM9qa9s3lM2rYVBcnC-YYlto94M5HVmGNt6zGIPbl_ptB7e1swVuc4NyBbxfz7gcJHs8Uo5D3NzlgkYE6B4cRwC7M3xynnDBg0_nlabwdXkR0IwfhRCLQHgd-rNKc3o--EPp2FQNPjxHd6FgeYi6AnLeh8-JRAarZvYXYKzJvjWXXhSArnDy7GmJVXRjn4vcGf4kcYcQIgcW_AeUcS9FpI5nhLOaU3k5vaHmU6nfxX5dVMQAd4fQMEs5zLypECl0hr4Nw3m0Qa6DPLwwalSD7Hr5ovVyWxCTt6Wg2SZOOxHLzOe7Xp8giJCU0XkOa6OYsCIvfFQ-1BevPvtqLvHbFQe3-HUtKg9iu3ZkDJXse9eBLc-3yEw8pTmTJXK7CKUMHuxtC0yZ6EWBhxWDJFK3Hc27CH8bzUiAK2yQs5sfXvBjsbgBz80H8Mn040ap3OTfuNfod2hDmy0ZNGu1Az5cBSlffwiHT6isMB3PwqfsbfHo2BvRTc9p3SDV1yBM9VqirXPslT9iaRWnSllHs6HbGtavXXnPew9yoR-S_lavOrDABdXzs-Hqajj7BqEra8knol6jMoe9WbR_qvHwL3pejC1fGKwieKx6-9moGSJta3SKkbzOV156ty_la0Z_vRWgFi4S8mTYytJRXdV70AHWyYJqgCrSJh3jYVqdJy38VZg_ty3OgoltA6aLV84EQy-GGi5pup_6MciGMpmWQllx4ROP-kfg7Stp6BsHs0pXozPqkjw51-VcYoRRj9s4geABFspdu23CDxZSOdc3-YXfWJe4YEbW3-a-AGrJQCcKcMEwnfgvh7ZnBu_wuGIy7EJOG9UmQOSbTG0iYNbgl3CGkCWz_pw-x23D754_JCnWRX7OYAs8UfNbpu_x9K1NQhStvYYVfevyNz7BTxGaHRBscyhIx4aq5TCdJ9nlwtyGDBzppvAwXyFQDt3fPALmvAk9M7UQ0ok_LtDv5db7zTV_GiBWieSY3M7QmRlPWELJF9Nce37B9O1SXwDrESqEhVGqZnRcBbZsB8zh3JMZc9fTH7IIO1DAnTJo7vd8d_vQ_A0B97vYKfEu4nByNEY1JC9NakZ073Mzd3KtMNazQL6FZYXQ7y1zqDte3_ZATqeBrcs4iY5iizIfKg7tBx3q0QCDZoNEDkaWps0tRFP986gHAVR4UNU6rBZ8xwOG8JqUPMENDt5F-0dFg1GMFY2QBUPWbcxPq7hYbQ=w1303-h652" />
+          </li>
+
+          <li class="sow-slider-image  sow-slider-image-cover" style="visibility: visible;;cursor: pointer;" data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}" >
+            <img width="1253" height="589" src="https://lh3.googleusercontent.com/fife/ALs6j_Ekgy-lBhpyjhbvBdoL1zQ-lwcABZmkH9z2410B6jzeVBXhkhUsJolKr276LFgSbWHab7ujcovV94hV1ubDSgv-ZTUOpnvUdQYV7_CXzBZKf3agtGj1htb9Zj_OWvne_NGH47yE57mVFFwbi5I4NcVBIjxqXb2DJxTIaOtCyZFzT5s8mXsvMhUTPK7PQdLq5ZkxSnOjb0S49mgT4ZjEsGG5jjli85rHl2yvBjhuRQgEF_krXnRFmELkFqtPcrthlwb0A6AJYNk5tXXXzS9GCUuOHeaAJNtmGDvrk1-JrNzh3Skok1vD3k74SlpZocOF1ZJX9PyhWdeoizu6Gv_5lMuFzzJHuEQQydSIv9ci_vb7AHoQahrtyL3yfB_xNqbOocj2pY28GHJdTk_j8SLQE9OpOwZFOLRFf-DALoEpJLq1xcuQiwD2iKb1TjcU3x5rs5RFxUe_oMPMTK3SI5CPWATLiY0xKrykHQFXNKtpkcr0veXJe2T5_T_zIIkbecDgRVPNPfgGt1pvZxzmwWgjUSu662wSlrILErh9Y1Fzxq1dUIOY4VuRxsu-cq1S2sT8u1NONsGHBb-4LflpQYtmo3SJDWZy2dBC2fyrdDOlUoL-g3_QZWB4CMiifH0QfF_s2fXa8tmpH6lhSnPJ7QmEGgCFt2ast4wz_of8HD7QjWXHzPl_rumDalH8C_wviXbJNRAl-BjHoLs1eepmGOcu0KJs8yXxoqPI_vjcbKi8MwxFjgjdK62hKa7f7KACiGB6QWB-FWGxrgOM_34qUn_E4JbS6jerlCiMSMs-5L9VTRa8y2ixAh1M4VyFBFGHXMqlqF_qj0Lb2TykKzfgdMwRKZohtCMFZPoRcmZ-SA3jHxHoFhcIuWN8jj23hH9e99iHvMud2Bm2tRfPp8wtD6PJUILF0H_56egy_UNmOIzxIN5BaK1Gc3N7Tp1Qq4EDmaN0pkof4yEDogMbd8Dhru3yUpyz6WJGnp5nlacMCpB0ZaN_4Z-wQdL6c0FdH-JfzHKaDdvzHCEETiMC3dxOnr9BFjUenybA5wJcjURhYQjR9ofbkC2T57CGvDWG1oGqBj5yWOibMieAMR_I4EnSh7XO0XoAp6bl5hHM2acSaSJ_oWbDqFa94h-k6oV09-jcGi46RYoT9uCYUMxEB6ES_pDTKQVfnSuSMNmEw2oPQRwHs5-DXXNVB2JlxZ1Buw8V5KMo3i8e-303_uTt3Exk_kAkYBy7N_dKpZzF_0plxYfu3yVqtj0McYylFwxAvtudsRwcisk3vMGLYqtecnoP18CI25KT-qdMWuHIw2u5cru4Ci0Mf7D5wH-ffBv8OHt9wPMWblUMdKYjFkfmoOvOji2pwZHF8ihGMTuwh1-SihWL2_6-YbBrSDi17ZmcxVv3aAPUlN9bsKz0q0OiBLakdQKkB_khuGNRoyEMVFoKX-IYfoekgEbpsgTpXMsAtp-1UrFQ5sTrQra_W2zRXsYUmxgLoHs6wEh9lOc7q8BPTBDES-frGk46yWHCjbOs0Y6cOaKAORfjuweA0uEzToLtJsQ8eEEOj_x-hSX1P_lzJIzJ2qh7wEcXZrmtheTqBCtE0ukenCN8hYEKu1TCOvVwYCkFIR7GJwxUSp28DDlMBgeqS-xHobFFZoqyGNNc_ehFZMgecuWA26Z6yG6yYJwD2dLfIEhPis4g=w1303-h652" />
+          </li>
+
+          <li class="sow-slider-image  sow-slider-image-cover" style="visibility: visible;;cursor: pointer;" data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}" >
+            <img width="1253" height="589" src="https://lh3.googleusercontent.com/fife/ALs6j_Fo14XNK4CN9Pp9U85WopwqgWhvHSEBN1-9aM77TBO8ggd76i709tfj_tvVV281Vqle0yvWoVTmmc6KwoPHqoi1KPyf77em7Q1xto1fklzODfqmgUM35audfHvdUST9LQthqMVYqV68bdez4LVCHFx-QKOtJ7l9EdG0viP4_wTmEuDedOF9rl3BfELs6HCD68W7q7c98b2Sriocrb3NZVaYE3FH45QBLBsZdjcO2i606cGD0HlzgVxzA4_oO45P_GRUJcR1cV3fSBOBcrNh4i3GD3l-VeeBjGKp4zApbECO4OVYwd8gHBfMAiXDjvcrAEzp3_f0QOcerHArjGY4hj6PG62XnmxXYT4gTe1pcJURQ8jaU4V_QDbIpUXsbxk95kM1wCoD0ZMlEFr_Sw0qHQFcdUz3BFaHpYMRYoR_vB1LZBSpMKPgGF4ZeXz-N8K-hr5v4P_c8GapKM1usM6Xriy7nMKjgnvoIsBXzfZ1M3oTZI6QvCjwF3rwV8n4gPxugV0YyY2ZtFlrLDRYMxk61exdb758NIx3l1pP1rYfZ1Ucw1RBTN9d8YUyFCHTMUmfqXiQryjZuez6Ak9DRW7KOYvc4APHZtspoQjmbPKt-XcaaQl2bVNWI2SUtMoEt7r29F6mU6Qshj1sY9wHsSkQJuzIQWC0Js5512azw3f7PXNwQ2LaK9c7WWdt7A-DepJ0M37CETjYn122t2GCSwlAGjo0XXRLz_xR7KjPYlsgaJk0MhgbLhQeyXm8IBulCu5Z8R13DFFgrNNNckswvwiBqYw_HyDDqhuA5PY2Os0WmZBr5PhH0cqlTcuaupnBFklloeJCtv7l4E-Y3E9U1XI8aA5n05Vg3naU5M9QQHchkcER0Br05pPabx7ZZEu9X_T8qO-WtQNYfiya12joLfoeJTITVNkbfzQ4IctMdCS3ULbdGzPH64Mo-mYjLdxcEPb5p2b8DMqoPSlmkqVFpxGs23sZ58q5bGhUuoPLyMb_gDguxkUWwYK5TzmbPwXjPKBwtRccwRm50HGeiDR3Ook2HZgLBHToOCgjmfwcI7SlSMvuYEPnavMxXo6UJSzIsymuLHl0ax8N3qH47rwbul7Gws3fbajGl6ABiVUKVdnPKOC8lgTU37PXteFOf164bxoAXSC9nc65tShNPggFjzWKM226NBzk3_GuRJ6CboFNsp9jfIvuyo-6uP4j6KJT0frZuThWZaTd4JSvn9TrbvGjrKUrUpg_9VVP_G6WTcnFRRmnD7W9LwVJWzVAeVwsnJ5o6-c88OnqPnvU_dtfZHFe-6pI_UtkshyCqdb09JtK58WEZ6r6w-m90zvEfGTPJeqOmtMYfAf5qEfrrB6uzzRIkr_9Ar_hAzAlnVloTxqX4sdy7GX6TKSAzfuWcDH5dMtqzIq29cLbuFoX6D7XY3AqD5WNtGUr-aF_i0O0x34Ebm9ie-sQRpAw1PudFrCJPGLl8VBqvtoDXzHT9OiMEOTrrs5r-Jiy5bJ6gSfDFovIy7f0TNGLmywGTU0I-AUW3eURtBAsA8yYmGBwdKFkyqMdp91TMKEp6l8RiD7PJHpKztsVuVK4WQS2wkq2_ycjRfC6bO3XSBum00gwNkdcJRoH1v8fX0yCdoPdE9Afk9xfthTkR-maDqKvEi2LZi1prDXYLr5JAMoYqbKUcfEM4FIb0UgkxF7dDA=w1303-h652" />
+          </li>
+
+          <li class="sow-slider-image  sow-slider-image-cover" style="visibility: visible;;cursor: pointer;" data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}" >
+            <img width="1253" height="589" src="https://lh3.googleusercontent.com/fife/ALs6j_HVJ7t1s4LRm6QWK8DsQ1nfSiM5KL2McDbxrL2zyqoDQtUp_0hyKCbYljbb8KZwITm92Cpu37THEBTHk3DS3DeXAwHqOdloKbY7aMc4qJ7HX8Wb8ZeP6ZPKPW1btk3uOHGTuJAPqpeXn4LcED_o1uzwOQHTT-3Cb8z_6TteNDgZcz3RfUey0M2W_h2OTuKusNL-fGrh_eZ4A51x3ww4IrP_Syydipl9DLwPACXF8n5bF0LxsHY5Xvo9ImUmO33SbG9CQT4H7N3_fdM7gWhDQWIeqWpKMiKKXPlLB1U6UvaatD7MKF89pZHIwplN9bWweyYNJN7sc__eWw_T72s6C5uG-nO9TcFSuqhL2pmMMKpH7nnxeYek_W2O1pVtEzwuggOdhijHT6IH5RUwD-D_GyZH9-gJvzdi3Tl10EVbMAjMAIoW69CHeMoAJmlCNHqybaGL3MJeywj-pq6FCErPyuTBP2dZaiyAQb3heMr_CtqbnA7Q092hXuMNf2ZE3Eb1lRX_X9LRiYWMQ_KGmfNMuVkzFxXPc_Z4EXpr-0LprzKAeRUSKRn2t8-aRe7cwM6JCmFlFFbCHYZkNXF72HZWmjHa8cZxk72aQU6nSl3Zd82Lz58V0sfM1SgLYUBPMBJ09kAptr1EI3mUpjY-5ZeZ5H1C9aTcdaT540RRVVYChPw4K2qhJU0Ea-eU5QmpHS1QlblHuMSzvwzyaDRQXmrN1YC3X0vD0vQzRcR0uzCeBQhqhbzjkM0j3kbRfeuboZRoWZriV1NOZnKZCLUnucV2Wnh5T6ZSrmYzxJrQ9wbG6QKeG0YBWt6Kq1rI92TWe345TFytJIsrvmwv9bbDK6cjEl25QhU1quVkPLGPLArZU8qBUC_uuSWiievL3N4U3mpSAWtq7QvXFhIZARzm-sN6JG6-YM0a36dmyMlHT3kLM93bsu5wUeBt0f94AQ3LKTkJ5fNxHFllOQk04niZnqE_aYwr7Leq925Z0404gVUqN7KMpAjaqSWzmtL-qpKfwqJxAnhBwrc-p9twGxyJSUzFSaMo0DOL2QHPZgTjrrIsvQXgUMoIVFMXUHvYTPK7hQ5FPauyhYWKsCq5SA0B8-PDLdYajmvmaGMvVlhan2Vo1_HMETqKiVHJiDzKzmLKoH91cz6vWCjhl2hIm2QTsIJt7zU43gojEMAyDc4ldRmEcx1VzaX7icctjCeeHfellkPPkyaLgYd5-RKLwGPTUeSUq-YEaC24tHf6WhtL2Z2AVi4QlaRb7QkCFAo-v5xNpxAFLCzkS3R08bEW3jpDMMB1i80PogNMotDkPvKWu3WuiKdRCTwY4kEJ4Auz_k6oTlF_cFLaqWy13J43hetph_SzdaoxyefUcblwzVPXs7a2qghxNjDHuZH4-J5stbjyQmvMixeOSJEHmS6yxJqA7eS4yk7m0IKTUgeHA1KHTgA4rG-T2oVWZEpIGoWjjxEEeXN2vmmO1QfsIjlSKQRgGX7ydr1RC5MyW_Txf6tI5RjH7_FIJjM3phQ5keOJjg1RvSTfs8EdknVO2F4T7b92JdVQFuR2KuXq16iLnHPleQ7m2NVHyhqg_fW4iA_h_P6bqUlm5IcLLAm_kWXFc4ptw82w4YENa_hwBXDapJ5rjicCKak8VXm4x1jNpj7_X4GGIpkUBI_8ZIROzZGJcb9m-V8XL6nrhw-Qkg=w1303-h652" />
+          </li>
+
+
+
+          <li class="sow-slider-image  sow-slider-image-cover" style="visibility: visible;;cursor: pointer;" data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}" >
+            <img width="1253" height="589" src="https://lh3.googleusercontent.com/fife/ALs6j_HIydG1vt-EkG6QtJ7Zsxv-BTgiTx0FZ3X-qTFcX_Uo9thLTabjwOyfSk9N6xMtXYrFPPgcy_WdG-fvAvWRED97muodKw7_uf5UG44sQ_6enuR1ThFoALoZeV38mFy6KK7jn_Qs7yhVrO3XZmHRZ3dRKQT4GOt_fSaQ56tGnr_hX-QGHczi1pNUsluKJBDuVLeaiTUtgw7rpFlN_w6iTKk1WjCp84-w54vxXTrTQHLlE-lUEP03ssNfmLFlYS3MHTPMQWjqmT89V-ea5C5huiShfnHww1z0eNZ0iNWt3n3AP03_oNQoM4T-tWdwO19n8VJTgM8t-owgOVbNcbF3h4hNH8y3Hb9xMfHlYrws87mjnDX8e5Bj6VK-vKF5tooh_kvWZhkMDY1jYAy10qQXNRJqG-orFHm7Hly7oD9lHQ5e5FTCBpwKODGUUQ8i3C74bPBzO9P-_RV9vgPerSQAlyCVn3TozWo7wuqvuWoX5Ok-0OfYvLBgVjNjSAxDozwohRRbatXg7jS2y0ckNsauVLC_lYN-85V2WTtsdptZjXt-8VMc1jKtWfcHDVL3-HctBHgXhZGTJShQiFANvmePnfM2ttNbtd_sjL2j2zQUmhBVXeBcnaqFDj39KgoWJ8SCsFzorl5hKVts92tkd_IOZUPiSF_vr_Jo6e7mwNfzSB69VWGKRDzOFKk7QBJ5LHEDYX9xgHbtZPtQWlzuacTb3iNzuxCe7D_E5n4WDMV6nkyTCodOaba2TC_jzSDjXaNwNqHJsQ3aQrQN1NZCzQ9bEaP1m0KhbwdhEgrdelyG4Q0B_f9pF8oRrqzVeNdCSqewG09sJRMO5kzDwowgFX8nyL7DbbeQqd6BHprr3Dx0FNmCHVvqzdvMVx_2IEQPgYQX5VW9sbBzwwwbRrmnqWBql349vmlrOsqDs9ZQlaGE3VxeonJbopqE4ucdx3XlryovdGwtql2pqrgTtq8ldUT2ieGL7D9D5RDZKFSO74yBDsgAwtsnhgGYVRirGusamVkJBvucgUlwEn67oh9t3HbvBnaUdJUsP0ZFVgDAGuAP_3RrYjhKPfv8--nL1fzKytl0VBZ5gxHlN-26Z8i2Jf4uz-qYi-wzuXivU6IFHVThWKyR1c-OW6PyOGx7xLoN4l4pyBKVjeAFRyb7n9t_fX56mqQutcMtSSCybUowhZksJFnvCykoa5DQnkvAdTodqSffEyXxWjflGxRTuiulZr15nkfForgAdwrMql0nsz3D4Y50SobnEdJkrn9RlxOeqyqvSZKoKUAk93ffdLtlOhcuE9tQnIMaHW1z4UtQ9UA_E1P1lMsXiRdIsoJ28AAWsJC_WwpqJo20TyrC8QEd-jxmVfi4GwjhfMgIVeECMhFni0XWAS3kGqz0wmekbv5DSjhHefLu0pbb-0bNjcDtQC9REAOz5oJLPWoJOcYxRQb4wHbjEwjCRLVHzx4B9Coh7_cYIeyywv7QpjrVVi93eNLSn9K3_XonSq9TxLltkEewZVC5rRSHJOi3hRuQ9AlQ3M786N0vlYr7_ZPsmBHpK9xlO5F5VVXY3DyRz3oKrTxUAxAe1wZVRNRx5-3f8N1h2tAuyHw5-5jEDbSC8uYuSuLc831XddzlxXIHaYUgzao357zb2Ex9zKqdHr92RnI8udyo2kW8vgv8JUdf3KsdQA7YSELQ-TJe4g=w1303-h652" />
+          </li>
+
+
+          <li class="sow-slider-image  sow-slider-image-cover" style="visibility: visible;;cursor: pointer;" data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}" >
+            <img width="1253" height="589" src="https://lh3.googleusercontent.com/fife/ALs6j_GhIs0uwMk-MAYjC8rlYp4h9PtoMW5cz8n0qGz8CsNMyLfXL7SmEDwDK-QyYj2dVym1zk11dHxgH2JoprX3HLcSi86m-825YwKfm3-Mh1CjhIC9Z4SG8GHrlPiMwvp4NuTJgkcQnB7x-Ohl7JHCxzYlc9oUzrtWLWd0vHaT7GasbnpzEMGmf-W-IVgetd71xYgA846IsEdejeP0hHlu8-FO7O1q_rtwsSwXz0bYJ8_tOmG115UVusicVZNyV67NOY4hKmauAFtKTnV2uA6kSvAvUIKAS9ZMBVcvGyGyiZG1OoBikUOfCJft9fr1x28kB04gKH8T5Et_6jeCQu-FZJNpHzLQ8FmvuOq9_FQOlBgGbM0dvjI7p5UkEpEctDWjjdbvjV6m5WFfZrQF_OKHDTzWhMvptPC-EVSqEnrYiQYt423P3Gd15h2M-GwMJ9tdFYk3I3rqPJaZPxAqy1D0TkumSIdtbeE-1QjGc8PdwhqffxXy6czaLAW65EDfSxUaSUgNqbUyV7q2a7TPURlcFcwkuoOD-NgHwTi7KHC4HWjMV89zAjCorItduCmlvcp1jYH-iTFIj162iQK4VrtyUAPHygL7pWGUDOTgx3P0f-iUSfbENpEVDadLreayRFRumU1XyTxTL6Vg9qzal--pmZupOGVcDoS0FSAhKOSd8FP0ZkPa7JMJHlEsNX9RbqSNEXY1T1jhSHislFZv_Pd9xPUQqPyUoR25kS1rH91dyQwu713gVtR6a5FfbQfkYW7osXWTs6a8FAg-w2k1wS1cxDK9oBqxrjynI8ZdgozvRGNjq6gat4L_u-3Rj1wwqjqqamVavNI5IiP7UNctdXgyK8WFAfJ6ZC38skijheM4B9tXE23amFOwBDlqxIMK1x4kfeKdjCIVWUeeXhKrB7xG_-GIx8zrHjjS-m_EiZSEODLRTObtnTCFHEYM0vG51J1cnC8OQG7H5hVJlxZbDV7EmMqGOHEt0WMqq88KSL1OYgZzteHYApZoty1fZp2gObXpKviRMm__EHS3PDqT1CVyyAF_an9GVGW8DysZATPZXJas4_DdGOTH2Y5TYDAnJ2Yj56EsIPZ8Lb9nXiJwV9bt1171dxedLOerNMqesGAu9Bi3kRiIP-1x7-9IDtGW--etmdWluihCdi9tMjJoIgRARaq9XwaO9-xJNSJy85YH2bw_kNQNbDMeLcbNrAXLvzyDyyuvL1QJsQg3oxZBKQnT--Z5ofvCsm8jFgoVoeBUYjqhEUzuwAfei3EVZBx5eQnOp6TafPh5m-7yLC_2oq0V7GWEFnGQsoAAAK2OonOzbkWnY_CpPnNCMstU9Q-gmHdtPJVlyvUE1j19o_IUk8tCRRRXwDQ626ZI9GC70Upt9NNFsF3k5o8Q-o68huzMbXTXVQaDXyOv-e32yyEJsyPNtIphj4RFPWyyneKrlSKnaloyjeR5ZviERBOY2EGqBnPuNIcqPgVoIJKbX3gE-DjRXXW4Uef0RcnqCLnW4NDXmUiu6NTAD5Dwaz5tTKVgLjPdYdgCZ_XtUrC8XHm29URjcaBnzBHuK-fWPbc_cOifM22pphsR-p0Bp5qWmJM39GyokiirIl7aHfmRUvsZEy8QL5aF7UAZ-0QauQYD7-ggbUfcDRqFIJndTUNmTd4YekTnKFk5tMU2hpwFp0m5uv8glYVF59V8=w1303-h652" />
+          </li>
+
+          <li class="sow-slider-image  sow-slider-image-cover" style="visibility: visible;;cursor: pointer;" data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}" >
+            <img width="1253" height="589" src="https://lh3.googleusercontent.com/fife/ALs6j_Hf0APCKx46VYk1ABceDXB8pQqN3qTz_toK_Psgt3wS4hJuIof8_all1tBuwfO_xgyFje4ZAMsdc16hSm7Ks4cX4kQlj0Zhz8z4rClMtr1NwZwmpsXD2l-UCy0p13AMHngihEY6_jkBqmBJVxxD1-H8jo-pJJImyIqOUG4FNcbnEcv8WoeGxYCed1MxaAjsn27D4JJiEKxyuL9cQw_vdA2mGX3ssRvj73d1hbBU7fSqbbmBDkVscR5zzKr_K_Wo59N3apSHaq6WcFl1tEDJOXTd3vPZqRhcuzS7h_w6m01qRyotGLdHi7wiZ1boHZj02zmesxOfDT5xmU9axRYPWRu7vZ1WWrZexUdg9SHLzQqgD2Mbfmipf2WgmZgiQ-X7Nf6mEs48S_FEnnpXpZfJ5tpUVDS6MegkDzS0g_odIDaTCsdoPLZ54hM0JwE9wbHI6wgqkDz3tFCf7DW1faEjfo7yoLGH6CZIWw92ApcNkquW2TSX54FTSd2cBlKPjss4lUXxX6LIs4ebltDK6ndwhkIJXv9tSL2TdRsSBk6V2b1l5VUERV6Qv3dJBWu7AxS8HuWn6RXSk7McU9fQpX6AuL5zgK-WmFIpo40m4yar4EZI-1YoNF8JKCPUUujyJff51fNRXeD6eLZ_Br-97j5UQZ6347a-0086aHGqS3i7aj9Q6s9nz_1MCl6rXRnNMcwBrnq0bXmDLVJDwCYsY881A89Zv9oW517zFI4Uo5mcGluquPP24OX12GI3SHW9ZdiwSN_NvMFafVXIdWPScZVU7dYbCNf8hIoVY4kn-4Yfrw4Vx-uNfDzkpy9Dx9fLnTNbyFeRWInEIK_vTZnjQDz4ef3giaV5L1ROj13UKia_XDO11jOooNyRGemaWVXvzRQ1MiKWFg-eiF5prlOHHBqvRbJhaHSd3Mjem1_k9WTUIqYnhMgvjNbMxVZ8e6u454-9th8U626OqU9Z7xNY7bkDI5z3A1RNbkNy42tZ_Ipg_TPLIKvmPnAF717sDzUYI2_TWjVYLsrf12CkbClQCMBXrDHZs_7OjY76KCfKwwolsIj1HX9dlMnmFstzITZR_iP0W_u3i400qe3MUr3Wl4_xCgFXUkVxU2QANPhKN8inkXJ92rqB7f8yD4OcGnI1ahP1HNQ9swQBDhzTGUcOUO_AOJChT85ewyP2m6IBUZKijNM1jP9WI0l4XBxX49Zw19yrDhPQROZWuG15Ni4_RUWw3tx5vPmFiNMNdkSSV31I3DQHFpqSi7w3MAUYyxiOYfV16kHnNohoDfQtE9tUDiEBU5LHHjzj4Ases_wA1vp0LMpslM87MAYoQOJBiNJc-0sHjb0C0kR3OWpU01QMuhHlEa4cskAVtUL8IQqtxTRr82BoY0BXawkLpRd68vYy44-PERJSE9ySz-hx4w46uFXPQVnlHDACZ19N3anqVgpmXcxk8OzRGtcAAnQBklL1SMIZuOc67Eqp3omygEl6BTwHkqa5zv3QxwXWAdOK5GO1Z_gLWnerbT-MQwEcT41T1E7tMOVhFAzlPJ5uIbEQw9OsqE6G1Ju5cmKmL-ht1GM3p46-EQ2zaFVXMY-wFgxN-Raq01w1dI2pTkDQ2IObu8J9wDi4yU2PTkzfVgkN4YMgXD0wuhYtD7Cuy2dhFyv4z7HT7BuikHdy72CzoY5uCkZV6iaRCA4mog=w1303-h652" />
+          </li>
+
+          <!-- <li class="sow-slider-image  sow-slider-image-cover" style="visibility: visible;;cursor: pointer;" data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}" >
+            <img width="1253" height="589" src="" />
+          </li> -->
+
+          
+
+
+
+
+        </ul>
+
+  </section>
+
 </main>
 
 <!-- partial -->
