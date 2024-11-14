@@ -48,6 +48,9 @@
 <!-- partial:index.partial.html -->
 <div class="cursor"></div>
 <div class="cursor-border"></div>
+
+
+
 <header>
   <a href="#home" class="logo">
     <img src="https://web.tecba.tech/wp-content/uploads/2023/08/LOGO-1.png" alt=""/>
@@ -74,6 +77,74 @@
   <div class="line"></div>
   <div class="line"></div>
 </label>
+
+<!-- reproductor de podcast tecba -->
+
+<div id="audio-container">
+    <button id="audio-button" onclick="toggleAudio()">🔇</button>
+    
+    <!-- Primer archivo de audio con volumen bajo -->
+    <audio id="audio1" preload="auto">
+        <source src="audio/Inicio Verde en InnovaTek ext v2.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Segundo archivo de audio con volumen normal -->
+    <audio id="audio2" preload="auto">
+        <source src="audio/Untitled notebook (6).wav" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+</div>
+
+<script>
+    const audio1 = document.getElementById("audio1");
+    const audio2 = document.getElementById("audio2");
+    const audioButton = document.getElementById("audio-button");
+    let isPlaying = true; // Variable para el estado de reproducción
+
+    // Configura el volumen para los audios
+    audio1.volume = 0.2; // Volumen bajo para el primer audio
+    audio2.volume = 1.2; // Volumen normal para el segundo audio
+
+    // Función para reproducir los audios en secuencia
+    function playSequentialAudio() {
+        audio1.play(); // Comienza con el primer audio
+
+        // Cuando el primer audio termina, reproduce el segundo
+        audio1.onended = () => {
+            audio2.play();
+        };
+
+        // Cuando el segundo audio termina, comienza de nuevo desde el primer audio
+        audio2.onended = () => {
+            playSequentialAudio();
+        };
+    }
+
+    // Función para controlar el botón de play/pausa
+    function toggleAudio() {
+        if (isPlaying) {
+            audio1.pause();
+            audio2.pause();
+            audioButton.textContent = "🤖"; // Cambia el ícono al de play
+            isPlaying = false;
+        } else {
+            playSequentialAudio();
+            audioButton.textContent = "🔇"; // Cambia el ícono al de pausa
+            isPlaying = true;
+        }
+    }
+
+    // Inicia la reproducción secuencial automáticamente al cargar la página
+    window.onload = () => {
+        playSequentialAudio(); // Inicia la secuencia de reproducción
+        audioButton.textContent = "🔇"; // Cambia el ícono al de pausa al inicio
+    };
+</script>
+
+<!-- reproductor de podcast tecba -->
+
+
 <div class="overlay"></div>
 <nav class="burger-nav">
   <ul>
@@ -89,6 +160,7 @@
     <li><a href="#antfots">Recuerdos</a></li>
   </ul>
 </nav>
+
 <main>
   <section class="hero-section" onload="countdown('contador')" id="home">
     <div class="logo">
@@ -1901,7 +1973,6 @@
           <li class="sow-slider-image  sow-slider-image-cover" style="visibility: visible;;cursor: pointer;" data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}" >
             <img width="1253" height="589" src="https://lh3.googleusercontent.com/fife/ALs6j_Hf0APCKx46VYk1ABceDXB8pQqN3qTz_toK_Psgt3wS4hJuIof8_all1tBuwfO_xgyFje4ZAMsdc16hSm7Ks4cX4kQlj0Zhz8z4rClMtr1NwZwmpsXD2l-UCy0p13AMHngihEY6_jkBqmBJVxxD1-H8jo-pJJImyIqOUG4FNcbnEcv8WoeGxYCed1MxaAjsn27D4JJiEKxyuL9cQw_vdA2mGX3ssRvj73d1hbBU7fSqbbmBDkVscR5zzKr_K_Wo59N3apSHaq6WcFl1tEDJOXTd3vPZqRhcuzS7h_w6m01qRyotGLdHi7wiZ1boHZj02zmesxOfDT5xmU9axRYPWRu7vZ1WWrZexUdg9SHLzQqgD2Mbfmipf2WgmZgiQ-X7Nf6mEs48S_FEnnpXpZfJ5tpUVDS6MegkDzS0g_odIDaTCsdoPLZ54hM0JwE9wbHI6wgqkDz3tFCf7DW1faEjfo7yoLGH6CZIWw92ApcNkquW2TSX54FTSd2cBlKPjss4lUXxX6LIs4ebltDK6ndwhkIJXv9tSL2TdRsSBk6V2b1l5VUERV6Qv3dJBWu7AxS8HuWn6RXSk7McU9fQpX6AuL5zgK-WmFIpo40m4yar4EZI-1YoNF8JKCPUUujyJff51fNRXeD6eLZ_Br-97j5UQZ6347a-0086aHGqS3i7aj9Q6s9nz_1MCl6rXRnNMcwBrnq0bXmDLVJDwCYsY881A89Zv9oW517zFI4Uo5mcGluquPP24OX12GI3SHW9ZdiwSN_NvMFafVXIdWPScZVU7dYbCNf8hIoVY4kn-4Yfrw4Vx-uNfDzkpy9Dx9fLnTNbyFeRWInEIK_vTZnjQDz4ef3giaV5L1ROj13UKia_XDO11jOooNyRGemaWVXvzRQ1MiKWFg-eiF5prlOHHBqvRbJhaHSd3Mjem1_k9WTUIqYnhMgvjNbMxVZ8e6u454-9th8U626OqU9Z7xNY7bkDI5z3A1RNbkNy42tZ_Ipg_TPLIKvmPnAF717sDzUYI2_TWjVYLsrf12CkbClQCMBXrDHZs_7OjY76KCfKwwolsIj1HX9dlMnmFstzITZR_iP0W_u3i400qe3MUr3Wl4_xCgFXUkVxU2QANPhKN8inkXJ92rqB7f8yD4OcGnI1ahP1HNQ9swQBDhzTGUcOUO_AOJChT85ewyP2m6IBUZKijNM1jP9WI0l4XBxX49Zw19yrDhPQROZWuG15Ni4_RUWw3tx5vPmFiNMNdkSSV31I3DQHFpqSi7w3MAUYyxiOYfV16kHnNohoDfQtE9tUDiEBU5LHHjzj4Ases_wA1vp0LMpslM87MAYoQOJBiNJc-0sHjb0C0kR3OWpU01QMuhHlEa4cskAVtUL8IQqtxTRr82BoY0BXawkLpRd68vYy44-PERJSE9ySz-hx4w46uFXPQVnlHDACZ19N3anqVgpmXcxk8OzRGtcAAnQBklL1SMIZuOc67Eqp3omygEl6BTwHkqa5zv3QxwXWAdOK5GO1Z_gLWnerbT-MQwEcT41T1E7tMOVhFAzlPJ5uIbEQw9OsqE6G1Ju5cmKmL-ht1GM3p46-EQ2zaFVXMY-wFgxN-Raq01w1dI2pTkDQ2IObu8J9wDi4yU2PTkzfVgkN4YMgXD0wuhYtD7Cuy2dhFyv4z7HT7BuikHdy72CzoY5uCkZV6iaRCA4mog=w1303-h652" />
           </li>
-
           <!-- <li class="sow-slider-image  sow-slider-image-cover" style="visibility: visible;;cursor: pointer;" data-url="{&quot;url&quot;:&quot;https:\/\/example.com\/&quot;,&quot;new_window&quot;:true}" >
             <img width="1253" height="589" src="" />
           </li> -->
@@ -1912,9 +1983,8 @@
 
 
         </ul>
-
+        <iframe src="https://www.youtube.com/embed/dO9Y9raME_s" title="Feria Tecnológica INNOVATEK v. Start Green - 2024" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </section>
-
 </main>
 
 <!-- partial -->
